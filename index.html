@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FakeNewsPrank — Parody Article Generator for Pranking Friends</title>
+  <meta name="description" content="Generate absurd parody news articles about your friends. Upload a photo, pick your joke, and share the chaos. 100% satire. 100% hilarious." />
+  <link rel="icon" href="assets/logo.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="nav-header" id="nav-header">
+    <nav class="nav-inner container">
+      <a href="#" class="nav-logo">
+        <img src="assets/logo.png" alt="FakeNewsPrank" class="logo-img" />
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+        <li><a href="#examples" class="nav-link">Examples</a></li>
+        <li><a href="#pricing" class="nav-link">Pricing</a></li>
+        <li><a href="#faq" class="nav-link">FAQ</a></li>
+      </ul>
+      <a href="https://fakenewsprank.com/create" class="btn btn-primary nav-cta">Create Your Article</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="container hero-inner">
+        <div class="hero-content reveal">
+          <div class="hero-badge">🎭 100% Parody &amp; Satire</div>
+          <h1 class="hero-headline">
+            Make Your Friend<br />
+            <span class="headline-highlight">Internet Famous.</span><br />
+            (For Something Ridiculous.)
+          </h1>
+          <p class="hero-sub">
+            Generate absurd parody news articles starring anyone you know. Upload a photo, pick your headline chaos, and watch their phone explode with screenshots.
+          </p>
+          <div class="hero-actions">
+            <a href="https://fakenewsprank.com/create" class="btn btn-primary btn-lg">Create Your Article</a>
+            <a href="#examples" class="btn btn-ghost btn-lg">View Examples</a>
+          </div>
+          <p class="hero-trust">
+            <svg class="trust-icon" viewBox="0 0 16 16" fill="none"><path d="M8 1L10 6H15L11 9.5L12.5 15L8 11.5L3.5 15L5 9.5L1 6H6L8 1Z" fill="currentColor"/></svg>
+            Entertainment &amp; satire only · No real news · Built-in parody disclaimers on every article
+          </p>
+        </div>
+        <div class="hero-mockup reveal reveal-delay-1">
+          <div class="mockup-card">
+            <div class="mockup-header">
+              <span class="mockup-badge">PARODY</span>
+              <span class="mockup-cat">Local News</span>
+            </div>
+            <div class="mockup-image">
+              <img src="assets/example.webp" alt="Local man — parody article example" class="mockup-image-img" />
+            </div>
+            <div class="mockup-body">
+              <h3 class="mockup-headline">Local Man Convinced He Has World's Rarest Medical Condition</h3>
+              <p class="mockup-teaser">The diagnosis came after three minutes on Google and a second opinion from Dr. ChatGPT.</p>
+              <div class="mockup-meta">
+                <span class="mockup-source">🗞 The Daily Absurdist</span>
+                <span class="mockup-time">Just now</span>
+              </div>
+            </div>
+            <div class="mockup-disclaimer">⚠ Parody &amp; Satire — For Entertainment Only</div>
+          </div>
+          <div class="mockup-glow"></div>
+        </div>
+      </div>
+      <div class="hero-bg-grid"></div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section how-it-works" id="how-it-works">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">Simple as a bad idea</p>
+          <h2 class="section-title">How It Works</h2>
+          <p class="section-desc">Four steps from zero to chaos. No experience required.</p>
+        </div>
+        <div class="steps-grid">
+          <div class="step-card reveal">
+            <div class="step-number">01</div>
+            <div class="step-icon">📷</div>
+            <h3 class="step-title">Upload a Photo</h3>
+            <p class="step-desc">Drop in any photo — your unsuspecting friend, your dog, your nemesis from HR. If it has a face, we'll make it famous.</p>
+          </div>
+          <div class="step-card reveal reveal-delay-1">
+            <div class="step-number">02</div>
+            <div class="step-icon">🎰</div>
+            <h3 class="step-title">Choose Your Chaos</h3>
+            <p class="step-desc">Pick from dozens of absurd story templates — Accidental Inventor, Local Hero Gone Wrong, and many more.</p>
+          </div>
+          <div class="step-card reveal reveal-delay-2">
+            <div class="step-number">03</div>
+            <div class="step-icon">⚡</div>
+            <h3 class="step-title">Generate the Article</h3>
+            <p class="step-desc">Our AI writes a full parody article with a custom AI-generated image. Reroll the image if the first one is too good — or not good enough.</p>
+          </div>
+          <div class="step-card reveal reveal-delay-3">
+            <div class="step-number">04</div>
+            <div class="step-icon">🚀</div>
+            <h3 class="step-title">Share the Chaos</h3>
+            <p class="step-desc">Your article gets its own shareable link on our content domain. Drop it in the group chat. Watch the reactions roll in.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED EXAMPLES -->
+    <section class="section examples" id="examples">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">Curated by our team</p>
+          <h2 class="section-title">Featured Examples</h2>
+          <p class="section-desc">These are team-made examples — not real user content. But yours could look exactly like this.</p>
+        </div>
+        <div class="examples-grid">
+
+          <article class="example-card reveal">
+            <div class="card-image card-image-1">
+              <span class="card-emoji">🧑‍💼</span>
+            </div>
+            <div class="card-body">
+              <span class="card-badge badge-tech">Tech</span>
+              <h3 class="card-headline">Area Man Announces New Startup That Is Just A Spreadsheet With A Logo</h3>
+              <p class="card-teaser">Investors described as "cautiously bewildered." Pitch deck includes twelve slides of synonyms for the word "disrupt."</p>
+              <div class="card-meta">
+                <span class="card-satire-label">PARODY</span>
+                <span class="card-read">2 min read</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="example-card reveal reveal-delay-1">
+            <div class="card-image card-image-2">
+              <span class="card-emoji">🏋️</span>
+            </div>
+            <div class="card-body">
+              <span class="card-badge badge-health">Health</span>
+              <h3 class="card-headline">Fitness Influencer's New Diet Consists Entirely of Foods She Previously Called Poison</h3>
+              <p class="card-teaser">Followers unsure whether to feel validated or betrayed. Supplement affiliate links updated accordingly.</p>
+              <div class="card-meta">
+                <span class="card-satire-label">PARODY</span>
+                <span class="card-read">3 min read</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="example-card reveal reveal-delay-2">
+            <div class="card-image card-image-3">
+              <span class="card-emoji">🐕</span>
+            </div>
+            <div class="card-body">
+              <span class="card-badge badge-local">Local</span>
+              <h3 class="card-headline">Local Dog Elected Unofficial Mayor of Apartment Building, Denies All Allegations</h3>
+              <p class="card-teaser">Tenant association split. Squirrel lobby concerned. Campaign manager (a Labrador) has yet to comment on the kibble scandal.</p>
+              <div class="card-meta">
+                <span class="card-satire-label">PARODY</span>
+                <span class="card-read">2 min read</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="example-card reveal">
+            <div class="card-image card-image-4">
+              <span class="card-emoji">👩‍🍳</span>
+            </div>
+            <div class="card-body">
+              <span class="card-badge badge-food">Food</span>
+              <h3 class="card-headline">Woman's 'Secret Family Recipe' Traced Back to 2009 Blog Post About Leftovers</h3>
+              <p class="card-teaser">Sources close to the gravy confirm the casserole in question has been served at every family gathering since. The blog has since been deleted.</p>
+              <div class="card-meta">
+                <span class="card-satire-label">PARODY</span>
+                <span class="card-read">4 min read</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="example-card reveal reveal-delay-1">
+            <div class="card-image card-image-5">
+              <span class="card-emoji">🎮</span>
+            </div>
+            <div class="card-body">
+              <span class="card-badge badge-tech">Gaming</span>
+              <h3 class="card-headline">Man Who Said 'It's Just One More Game' Now Seven Hours Deep, Emerging Only for Snacks</h3>
+              <p class="card-teaser">Roommates have started leaving granola bars by the controller. Health and safety officials describe the situation as "stable but aromatic."</p>
+              <div class="card-meta">
+                <span class="card-satire-label">PARODY</span>
+                <span class="card-read">2 min read</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="example-card reveal reveal-delay-2">
+            <div class="card-image card-image-6">
+              <span class="card-emoji">🧳</span>
+            </div>
+            <div class="card-body">
+              <span class="card-badge badge-travel">Travel</span>
+              <h3 class="card-headline">Man Books 'Off the Beaten Path' Trip That Is Literally the Most Visited Place on Earth</h3>
+              <p class="card-teaser">Instagram caption planned weeks in advance. Itinerary includes three Michelin-starred restaurants described as "hidden gems."</p>
+              <div class="card-meta">
+                <span class="card-satire-label">PARODY</span>
+                <span class="card-read">3 min read</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+        <div class="examples-note reveal">
+          <span class="note-icon">🔗</span>
+          <p>Your generated parody articles get their own shareable link, hosted on <strong>randomdailynews.com</strong> — easy to share, easy to screenshot, impossible to unsend.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY IT'S FUNNY -->
+    <section class="section why-section" id="why">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">The value proposition</p>
+          <h2 class="section-title">Why People Can't Stop Using It</h2>
+          <p class="section-desc">Other than the fact that watching someone read an article about themselves is genuinely priceless.</p>
+        </div>
+        <div class="why-grid">
+          <div class="why-card reveal">
+            <div class="why-icon">🎯</div>
+            <h3 class="why-title">Surgically Specific Pranks</h3>
+            <p class="why-desc">This isn't a generic meme. It's a full parody article, with your friend's face, their name, their completely fabricated scandal.</p>
+          </div>
+          <div class="why-card reveal reveal-delay-1">
+            <div class="why-icon">🔗</div>
+            <h3 class="why-title">Instant Shareable Link</h3>
+            <p class="why-desc">Every article gets a real URL on its own domain. Drop it in the group chat. Watch five people screenshot it before they even read the headline.</p>
+          </div>
+          <div class="why-card reveal reveal-delay-2">
+            <div class="why-icon">🎲</div>
+            <h3 class="why-title">Reroll the Image for Chaos</h3>
+            <p class="why-desc">Not happy with the AI-generated image? Reroll it. And again. And again. Each reroll costs one credit and is absolutely worth it.</p>
+          </div>
+          <div class="why-card reveal">
+            <div class="why-icon">🛡️</div>
+            <h3 class="why-title">Satire Disclaimers Baked In</h3>
+            <p class="why-desc">Every article is clearly labeled as parody and satire. So everyone knows it's a joke — except your friend, for approximately 8 seconds.</p>
+          </div>
+          <div class="why-card reveal reveal-delay-1">
+            <div class="why-icon">⚡</div>
+            <h3 class="why-title">Ready in Under 60 Seconds</h3>
+            <p class="why-desc">Upload. Pick your template. Generate. Your masterpiece of journalistic fiction is live before you've even thought of a good excuse.</p>
+          </div>
+          <div class="why-card reveal reveal-delay-2">
+            <div class="why-icon">🌍</div>
+            <h3 class="why-title">Hosted Separately for Easy Sharing</h3>
+            <p class="why-desc">Article pages live on a dedicated domain, so you can share just the article link. No account needed for your victims to view it.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="section pricing" id="pricing">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">Simple &amp; transparent</p>
+          <h2 class="section-title">Get Your Credits</h2>
+          <p class="section-desc">One credit = one generated parody article. Extra credits let you reroll the AI image for maximum absurdity. Credits never expire.</p>
+        </div>
+        <div class="pricing-grid">
+
+          <div class="pricing-card reveal">
+            <div class="pricing-label">Starter</div>
+            <div class="pricing-credits">5 <span>Credits</span></div>
+            <div class="pricing-price">$4.99</div>
+            <div class="pricing-per">$1.00 per article</div>
+            <ul class="pricing-features">
+              <li>5 parody article generations</li>
+              <li>Each image reroll = 1 credit</li>
+              <li>Shareable article links</li>
+              <li>Parody disclaimers included</li>
+              <li>Credits never expire</li>
+            </ul>
+            <a href="https://fakenewsprank.com/buy?pack=5" class="btn btn-outline pricing-btn">Get Started</a>
+          </div>
+
+          <div class="pricing-card pricing-featured reveal reveal-delay-1">
+            <div class="pricing-popular-badge">Most Popular</div>
+            <div class="pricing-label">Group Chat</div>
+            <div class="pricing-credits">15 <span>Credits</span></div>
+            <div class="pricing-price">$11.99</div>
+            <div class="pricing-per">$0.80 per article</div>
+            <ul class="pricing-features">
+              <li>15 parody article generations</li>
+              <li>Each image reroll = 1 credit</li>
+              <li>Shareable article links</li>
+              <li>Parody disclaimers included</li>
+              <li>Credits never expire</li>
+            </ul>
+            <a href="https://fakenewsprank.com/buy?pack=15" class="btn btn-primary pricing-btn">Get 15 Credits</a>
+          </div>
+
+          <div class="pricing-card reveal reveal-delay-2">
+            <div class="pricing-label">Chaos Mode</div>
+            <div class="pricing-credits">50 <span>Credits</span></div>
+            <div class="pricing-price">$29.99</div>
+            <div class="pricing-per">$0.60 per article</div>
+            <ul class="pricing-features">
+              <li>50 parody article generations</li>
+              <li>Each image reroll = 1 credit</li>
+              <li>Shareable article links</li>
+              <li>Parody disclaimers included</li>
+              <li>Credits never expire</li>
+            </ul>
+            <a href="https://fakenewsprank.com/buy?pack=50" class="btn btn-outline pricing-btn">Go Chaos Mode</a>
+          </div>
+
+        </div>
+        <p class="pricing-note reveal">Image rerolls use 1 credit each. You can reroll as many times as you have credits — because sometimes the AI needs to try harder.</p>
+      </div>
+    </section>
+
+    <!-- SAFETY / PARODY SECTION -->
+    <section class="section safety" id="safety">
+      <div class="container">
+        <div class="safety-inner reveal">
+          <div class="safety-icon-large">🛡️</div>
+          <h2 class="safety-title">Built for Laughs, Not for Harm</h2>
+          <p class="safety-desc">FakeNewsPrank is satire and parody entertainment. Think of it like a ridiculous tabloid your friend group writes together — not a tool for deception, harassment, or anything the lawyers would frown at.</p>
+          <div class="safety-grid">
+            <div class="safety-item">
+              <span class="safety-item-icon">✅</span>
+              <div>
+                <strong>Every article is clearly labeled as parody</strong>
+                <p>All generated articles include prominent satire and parody disclaimers. No one will mistake these for real news — and if they do, that's on them.</p>
+              </div>
+            </div>
+            <div class="safety-item">
+              <span class="safety-item-icon">🚫</span>
+              <div>
+                <strong>Harmful &amp; defamatory content is not allowed</strong>
+                <p>Content designed to harass, defame, intimidate, or deceive violates our Terms of Service. We review reports and take action quickly.</p>
+              </div>
+            </div>
+            <div class="safety-item">
+              <span class="safety-item-icon">🗑️</span>
+              <div>
+                <strong>Easy reporting and takedown</strong>
+                <p>Anyone can report an article or submit a takedown request through our footer link. We handle removal requests promptly and without drama.</p>
+              </div>
+            </div>
+            <div class="safety-item">
+              <span class="safety-item-icon">🔒</span>
+              <div>
+                <strong>Content lives on a separate domain</strong>
+                <p>User-generated articles are hosted on <strong>randomdailynews.com</strong> — completely separate from the main site, clearly branded as user-generated parody.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq" id="faq">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">Got questions?</p>
+          <h2 class="section-title">Frequently Asked</h2>
+        </div>
+        <div class="faq-list reveal">
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Is this a real news site?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Absolutely not. FakeNewsPrank is a parody and satire entertainment platform. Nothing generated here is intended to be, or should be interpreted as, real news. Every generated article is clearly labeled as parody. It's a prank tool, full stop.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Are the generated articles public?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Generated articles get a shareable link, but they're not indexed or featured publicly by us. You choose who sees it — just copy the link and share it however you want. The article won't appear in any public feed or directory on our site.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Where are generated articles hosted?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>All user-generated parody articles are hosted on a separate subdomain: <strong>articles.fakenewsprank.com</strong>. This keeps generated content completely separate from the main site, and makes sharing simple — just send the link.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Can I report or remove an article?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes. Every article page has a report link, and you can submit a takedown request via the link in our footer. We take reports seriously and process removal requests promptly. If you are the subject of an article and want it removed, we will remove it.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              How do credits work?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>One credit = one parody article generation. You choose a photo, a story template, and hit generate. The article and an AI-generated image are created and a shareable link is ready instantly. Credits never expire, so you can buy in bulk and use them whenever inspiration strikes.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Can I reroll the AI-generated image?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes! If the first AI image isn't quite right — or is way too right — you can reroll it. Each image reroll costs 1 credit. You can reroll as many times as you want (and have credits for). The article text stays the same; only the image regenerates.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              What content is not allowed?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Content that is genuinely defamatory, designed to harass a specific person, sexually explicit, or could be mistaken for real news in a harmful way violates our Terms of Service. This is a platform for harmless laughs among friends — not a weapon. Accounts that misuse the platform will be suspended.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="section final-cta" id="final-cta">
+      <div class="container">
+        <div class="final-cta-inner reveal">
+          <p class="section-label">The group chat is waiting</p>
+          <h2 class="final-cta-headline">Make Your First Prank Article</h2>
+          <p class="final-cta-sub">Upload a photo. Generate the chaos. Drop the link. Repeat. Your friends will absolutely not thank you for this.</p>
+          <a href="https://fakenewsprank.com/create" class="btn btn-primary btn-xl">Make Your First Prank Article</a>
+          <p class="final-cta-note">🎭 Parody &amp; satire only · Credits from $4.99 · No account needed to view articles</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo footer-logo">
+          <img src="assets/logo.png" alt="FakeNewsPrank" class="logo-img" />
+        </a>
+        <p class="footer-tagline">The internet's most irresponsible journalism simulator.</p>
+      </div>
+      <div class="footer-links-group">
+        <div class="footer-col">
+          <h4 class="footer-col-title">Product</h4>
+          <ul>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#examples">Examples</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="https://fakenewsprank.com/create">Create Article</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Legal &amp; Safety</h4>
+          <ul>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="https://fakenewsprank.com/report">Report an Article</a></li>
+            <li><a href="https://fakenewsprank.com/takedown">Takedown Request</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p class="footer-disclaimer">⚠️ <strong>FakeNewsPrank is a parody and satire entertainment platform.</strong> All generated articles are fictional and for entertainment purposes only. Nothing on this site is intended to be factual news. Generated content is hosted on articles.fakenewsprank.com and is clearly labeled as parody.</p>
+      <p class="footer-copy">&copy; 2026 FakeNewsPrank. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
