@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Auth App</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Signed-out view: shown on first visit or when logged out -->
+        <div id="signed-out-view" class="view">
+            <div class="card">
+                <h1>Welcome</h1>
+                <p>Sign in to continue</p>
+                
+                <div id="auth-tabs">
+                    <button class="tab active" data-tab="signin">Sign In</button>
+                    <button class="tab" data-tab="signup">Sign Up</button>
+                </div>
+
+                <!-- Sign In Form -->
+                <form id="signin-form" class="auth-form">
+                    <input type="email" id="signin-email" placeholder="Email" required>
+                    <input type="password" id="signin-password" placeholder="Password" required>
+                    <p id="auth-message" class="message"></p>
+                    <button type="submit">Sign In</button>
+                </form>
+
+                <!-- Sign Up Form -->
+                <form id="signup-form" class="auth-form hidden">
+                    <input type="email" id="signup-email" placeholder="Email" required>
+                    <input type="password" id="signup-password" placeholder="Password (min 6 chars)" required minlength="6">
+                    <p id="signup-message" class="message"></p>
+                    <button type="submit">Create Account</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Signed-in view: shown when user is authenticated -->
+        <div id="signed-in-view" class="view hidden">
+            <div class="card">
+                <h1>You're signed in!</h1>
+                <p id="user-email"></p>
+                <button id="signout-btn">Sign Out</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-auth-compat.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>
