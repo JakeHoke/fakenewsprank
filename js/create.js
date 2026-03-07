@@ -36,14 +36,18 @@
 
         console.log('currentUser:', window.currentUser);
 
-        db.collection('credits').doc(user.uid).get().then(function(doc) {
-            window.currentUserCredits = doc.exists ? (doc.data().credits || 0) : 0;
-            console.log('currentUserCredits:', window.currentUserCredits);
-        }).catch(function(err) {
-            window.currentUserCredits = 0;
-            console.log('currentUserCredits:', 0, '(read failed:', err.message + ')');
-        });
-
-        document.querySelector('main p').textContent = 'Signed in as ' + user.email;
+        db.collection('credits').doc('credits').collection('credits').doc(user.uid).get()
+            .then(function(doc) {
+                window.currentUserCredits = doc.exists ? (doc.data().credits || 0) : 0;
+                console.log('currentUserCredits:', window.currentUserCredits);
+                document.querySelector('main p').textContent =
+                    'Signed in as ' + user.email + ' — Credits: ' + window.currentUserCredits;
+            })
+            .catch(function(err) {
+                window.currentUserCredits = 0;
+                console.log('currentUserCredits:', 0, '(read failed:', err.message + ')');
+                document.querySelector('main p').textContent =
+                    'Signed in as ' + user.email + ' — Credits: 0';
+            });
     });
 })();
