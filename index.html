@@ -25,7 +25,7 @@
         <li><a href="#pricing" class="nav-link">Pricing</a></li>
         <li><a href="#faq" class="nav-link">FAQ</a></li>
       </ul>
-      <a href="https://fakenewsprank.com/create" class="btn btn-primary nav-cta">Create Your Article</a>
+      <a href="https://fakenewsprank.com/create" class="btn btn-primary nav-cta" data-create-link>Create Your Article</a>
       <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -48,7 +48,7 @@
             Generate absurd parody news articles starring anyone you know. Upload a photo, pick your headline chaos, and watch their phone explode with screenshots.
           </p>
           <div class="hero-actions">
-            <a href="https://fakenewsprank.com/create" class="btn btn-primary btn-lg">Create Your Article</a>
+            <a href="https://fakenewsprank.com/create" class="btn btn-primary btn-lg" data-create-link>Create Your Article</a>
             <a href="#examples" class="btn btn-ghost btn-lg">View Examples</a>
           </div>
           <p class="hero-trust">
@@ -461,7 +461,7 @@
           <p class="section-label">The group chat is waiting</p>
           <h2 class="final-cta-headline">Make Your First Prank Article</h2>
           <p class="final-cta-sub">Upload a photo. Generate the chaos. Drop the link. Repeat. Your friends will absolutely not thank you for this.</p>
-          <a href="https://fakenewsprank.com/create" class="btn btn-primary btn-xl">Make Your First Prank Article</a>
+          <a href="https://fakenewsprank.com/create" class="btn btn-primary btn-xl" data-create-link>Make Your First Prank Article</a>
           <p class="final-cta-note">🎭 Parody &amp; satire only · Credits from $4.99 · No account needed to view articles</p>
         </div>
       </div>
@@ -485,7 +485,7 @@
             <li><a href="#how-it-works">How It Works</a></li>
             <li><a href="#examples">Examples</a></li>
             <li><a href="#pricing">Pricing</a></li>
-            <li><a href="https://fakenewsprank.com/create">Create Article</a></li>
+            <li><a href="https://fakenewsprank.com/create" data-create-link>Create Article</a></li>
           </ul>
         </div>
         <div class="footer-col">
@@ -505,6 +505,9 @@
     </div>
   </footer>
 
+  <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-auth-compat.js"></script>
+  <script src="js/auth-guard.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
