@@ -16,12 +16,18 @@
         measurementId: "G-J5RQCTR5JS"
     };
 
-    firebase.initializeApp(firebaseConfig);
+    if (!firebase.apps.length) {
+        firebase.initializeApp(firebaseConfig);
+    }
+
     const auth = firebase.auth();
     const db = firebase.firestore();
 
     window.currentUser = null;
     window.currentUserCredits = null;
+
+    const statusEl = document.querySelector('main p');
+    statusEl.textContent = 'Loading...';
 
     auth.onAuthStateChanged(function(user) {
         if (!user) {
@@ -36,17 +42,19 @@
 
         console.log('currentUser:', window.currentUser);
 
-        db.collection('credits').doc('credits').collection('credits').doc(user.uid).get()
+        db.collection('credits').doc(user.uid).get()
             .then(function(doc) {
                 window.currentUserCredits = doc.exists ? (doc.data().credits || 0) : 0;
                 console.log('currentUserCredits:', window.currentUserCredits);
-                document.querySelector('main p').textContent =
+
+                statusEl.textContent =
                     'Signed in as ' + user.email + ' — Credits: ' + window.currentUserCredits;
             })
             .catch(function(err) {
                 window.currentUserCredits = 0;
-                console.log('currentUserCredits:', 0, '(read failed:', err.message + ')');
-                document.querySelector('main p').textContent =
+                console.error('Credit read failed:', err);
+
+                statusEl.textContent =
                     'Signed in as ' + user.email + ' — Credits: 0';
             });
     });
