@@ -13,24 +13,7 @@
 </head>
 <body>
 
-  <!-- NAVIGATION -->
-  <header class="nav-header scrolled" id="nav-header">
-    <nav class="nav-inner container">
-      <a href="index.html" class="nav-logo">
-        <img src="assets/logo.png" alt="FakeNewsPrank" class="logo-img" />
-      </a>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="index.html#how-it-works" class="nav-link">How It Works</a></li>
-        <li><a href="index.html#examples" class="nav-link">Examples</a></li>
-        <li><a href="index.html#pricing" class="nav-link">Pricing</a></li>
-        <li><a href="index.html#faq" class="nav-link">FAQ</a></li>
-      </ul>
-      <a href="https://fakenewsprank.com/create" class="btn btn-primary nav-cta">Create Your Article</a>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </nav>
-  </header>
+  <div id="site-header"></div>
 
   <main>
     <section class="section legal-page">
@@ -42,49 +25,43 @@
 
           <div class="legal-body">
             <p class="legal-intro">
-              FakeNewsPrank is a service operated by TechBizDevs LLC ("we," "us," or "our"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our website and services.
+              FakeNewsPrank.com is operated by TechBizDevs LLC ("we," "us," or "our"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use the FakeNewsPrank.com website and services.
             </p>
 
             <h2>1. Information We Collect</h2>
-            <p><strong>Account and profile information.</strong> If you create an account, we collect your email address, username (if provided), and password (stored in hashed form).</p>
-            <p><strong>Content you provide.</strong> When you use our service, you may upload photos and provide text (such as names and story choices). This content is used to generate parody articles and may be stored to display your generated articles. You represent that you have the necessary rights and permissions to upload any images or content you submit to the service and to allow us to process that content to generate parody articles and images.</p>
-            <p><strong>Payment information.</strong> Purchases are processed by third-party payment processors such as Stripe. We do not store full credit card numbers. We may receive and store limited transaction data, such as the last four digits, billing email, payment status, and transaction identifiers, for support, recordkeeping, and fraud prevention.</p>
-            <p><strong>Usage and device data.</strong> We collect information about how you use our site, such as pages visited and features used, along with basic device and browser data such as IP address, user agent, and approximate geolocation inferred from IP, for operation, security, analytics, and abuse prevention.</p>
+            <p><strong>Account information.</strong> If you create an account, we collect account information such as email address, username (if provided), and hashed password or authentication-linked account data (e.g., via Firebase Authentication or similar).</p>
+            <p><strong>Uploaded photos and content.</strong> When you use the service, you may upload photos and provide prompts, names, story choices, and other text inputs. This content is used to generate parody articles and may be stored to display and host your generated articles. You represent that you have the rights and permissions necessary to upload any content you submit, including photos of others where consent is required.</p>
+            <p><strong>Generated content.</strong> We may store the parody articles and AI-generated images created through the service so that shareable links continue to work and for operational purposes.</p>
+            <p><strong>Payment-related data.</strong> Purchases are processed by third-party payment processors such as Stripe. We do not store full payment card numbers. We may receive and store payment-related metadata (e.g., last four digits, billing email, payment status, transaction identifiers) for support, recordkeeping, and fraud prevention.</p>
+            <p><strong>Usage, device, and log data.</strong> We collect information about how you use the site (e.g., pages visited, features used), along with device, browser, IP address, and log data for operation, security, analytics, and abuse prevention.</p>
             <p><strong>Cookies and similar technologies.</strong> We use cookies and similar technologies for session management, preferences, security, and analytics as described in this policy.</p>
 
             <h2>2. How We Use Your Information</h2>
-            <p>We use the information we collect to:</p>
+            <p>We use the information we collect to provide, operate, maintain, and improve the service; generate parody articles and AI-generated images; process payments and manage accounts and credits; host and display generated articles on our content domains (including randomdailynews.com); respond to support, takedown, and abuse reports; detect and prevent fraud and abuse; send service-related communications; analyze usage; and comply with law and enforce our policies.</p>
+
+            <h2>3. Infrastructure and Service Providers</h2>
+            <p>The service is operated using infrastructure and services provided by Google Cloud and Firebase. This includes:</p>
             <ul>
-              <li>Provide, operate, maintain, and improve the FakeNewsPrank service</li>
-              <li>Generate parody articles and AI-generated images based on your inputs</li>
-              <li>Process payments and manage your account, purchases, and credits</li>
-              <li>Host and display generated articles on our content domains, such as articles.fakenewsprank.com or randomdailynews.com</li>
-              <li>Respond to support requests, takedown requests, and abuse reports</li>
-              <li>Detect and prevent fraud, abuse, unauthorized access, and violations of our Terms of Service</li>
-              <li>Send service-related communications, such as order confirmations, account notices, and security alerts</li>
-              <li>Analyze usage to improve our product, moderation systems, and user experience</li>
-              <li>Comply with applicable law and enforce our policies</li>
+              <li><strong>Hosting.</strong> Firebase Hosting and/or Google Cloud hosting/infrastructure for the website and application.</li>
+              <li><strong>Authentication.</strong> Firebase Authentication for login and account access.</li>
+              <li><strong>Storage.</strong> Cloud storage (e.g., Firebase or Google Cloud storage) for user uploads and generated assets.</li>
+              <li><strong>AI generation.</strong> Google Cloud and/or Google AI (e.g., Vertex AI) infrastructure for AI-generated text and images, where applicable.</li>
             </ul>
+            <p>Payment processing is handled by third-party processors such as Stripe. These providers process data in accordance with their own policies and our agreements. We do not store full payment card numbers.</p>
 
-            <h2>3. AI-Generated Content</h2>
-            <p>Our service uses artificial intelligence models to generate parody articles and images based on user inputs. Generated outputs may be inaccurate, fictional, exaggerated, or offensive and are intended solely for entertainment and satire purposes.</p>
-            <p>We do not guarantee the accuracy, reliability, legality, or appropriateness of AI-generated content. Users are responsible for the prompts, images, and other content they submit to the service.</p>
+            <h2>4. AI-Generated Content and Disclosure</h2>
+            <p>The service uses artificial intelligence to generate parody articles and images. AI-generated outputs may be fictional, inaccurate, exaggerated, misleading, unexpected, or offensive and are intended solely for entertainment and satire. We do not guarantee the accuracy, reliability, legality, or appropriateness of AI-generated content. Users are responsible for the prompts, images, and other content they submit.</p>
 
-            <h2>4. Sharing and Disclosure</h2>
-            <p>We may share your information in the following circumstances:</p>
-            <ul>
-              <li><strong>Service providers.</strong> With vendors who help us operate the service, including hosting, payment processing, analytics, security, and AI or model providers. These providers are permitted to use your information only to perform services for us, subject to appropriate contractual or legal protections.</li>
-              <li><strong>Generated content.</strong> Parody articles you create may be publicly accessible via shareable links on our content domains. Anyone with the link may be able to view the article and associated AI-generated image. Generated articles may also be indexed by search engines unless removed, restricted, or blocked by us.</li>
-              <li><strong>Legal and safety.</strong> When required by law, subpoena, court order, or other valid legal process, or when we believe disclosure is necessary to protect our rights, users, the public, or the integrity of the service.</li>
-              <li><strong>Business transfers.</strong> In connection with a merger, acquisition, financing, asset sale, or other business transaction, subject to substantially similar privacy commitments.</li>
-            </ul>
-            <p>We do not sell your personal information to third parties for their own direct marketing purposes.</p>
+            <h2>5. Generated Content Hosting and Public Accessibility</h2>
+            <p>Generated parody articles may be hosted or displayed on randomdailynews.com and may be accessible to anyone with the link. We may store generated articles so that shareable links continue to work. You represent that you have the rights and permissions necessary for any content you upload and for our use and hosting of generated content as described in this policy.</p>
 
-            <h2>5. Data Retention</h2>
-            <p>We retain account, transaction, and usage data for as long as your account is active or as needed to provide the service and fulfill the purposes described in this policy. Generated articles may be stored so that shareable links continue to work. We may delete, anonymize, restrict access to, or remove content at our discretion, including in response to takedown requests, policy violations, abuse concerns, legal requests, or operational needs.</p>
-            <p>We may retain certain data for longer where required by law or where reasonably necessary for legitimate business purposes, such as fraud prevention, dispute resolution, chargeback defense, tax compliance, security, and enforcement of our agreements.</p>
+            <h2>6. Sharing and Disclosure</h2>
+            <p>We may share your information with service providers (including Firebase and Google Cloud as described above, and payment processors such as Stripe) who assist in operating the service; when generated content is made accessible via shareable links as described above; when required by law or to protect rights, users, or the public; and in connection with a merger, acquisition, or similar business transaction. We do not sell your personal information to third parties for their own direct marketing purposes.</p>
 
-            <h2>6. Your Rights and Choices</h2>
+            <h2>7. Data Retention and Removal</h2>
+            <p>We retain account, transaction, and usage data for as long as your account is active or as needed to provide the service. TechBizDevs LLC may store generated articles so that links continue to work, and may delete, restrict, or remove content in response to takedown requests, abuse concerns, legal requests, policy violations, or operational needs. We may retain certain data longer where required by law or for legitimate purposes such as fraud prevention, dispute resolution, and enforcement.</p>
+
+            <h2>8. Your Rights and Choices</h2>
             <p>Depending on your location, you may have the right to:</p>
             <ul>
               <li>Access and receive a copy of the personal data we hold about you</li>
@@ -95,26 +72,25 @@
               <li>Withdraw consent where processing is based on consent</li>
               <li>Lodge a complaint with a supervisory authority or regulator</li>
             </ul>
-            <p>You may request removal of a generated article through our <a href="https://fakenewsprank.com/takedown">Takedown Request</a> process. If you believe content generated through our service violates your rights or portrays you in a misleading, harmful, or unlawful way, you may also contact us for review. To exercise other privacy rights, use the contact details below.</p>
+            <p>You may request removal of a generated article through our <a href="contact.html">Takedown Request</a> process. If you believe content generated through our service violates your rights or portrays you in a misleading, harmful, or unlawful way, you may also contact us for review. To exercise other privacy rights, use the contact details below.</p>
 
-            <h2>7. Security</h2>
+            <h2>9. Security</h2>
             <p>We implement reasonable technical and organizational safeguards designed to protect your information against unauthorized access, alteration, disclosure, or destruction. No method of transmission over the internet or electronic storage is completely secure, and we cannot guarantee absolute security.</p>
 
-            <h2>8. Children</h2>
+            <h2>10. Children</h2>
             <p>Our service is not directed to children under the age of 13, or any higher minimum age required by applicable law in your jurisdiction. We do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please contact us and we will take appropriate steps to investigate and delete the information where required.</p>
 
-            <h2>9. International Transfers</h2>
+            <h2>11. International Transfers</h2>
             <p>Your information may be processed and stored in countries other than your own, including countries that may have different data protection laws. Where required, we take reasonable steps to ensure such transfers are subject to appropriate safeguards in accordance with applicable law.</p>
 
-            <h2>10. Changes to This Policy</h2>
+            <h2>12. Changes to This Policy</h2>
             <p>We may update this Privacy Policy from time to time. We will post the updated version on this page and revise the &quot;Last updated&quot; date above. If we make material changes, we may also provide notice through the service, by email, or by other appropriate means. Your continued use of the service after the updated policy becomes effective constitutes acceptance of the revised Privacy Policy.</p>
 
-            <h2>11. Contact Us</h2>
+            <h2>13. Contact Us</h2>
             <p>For privacy-related questions, takedown concerns, or to exercise your rights, contact us at:</p>
             <p>
-              <strong>FakeNewsPrank</strong><br />
-              Operated by TechBizDevs LLC<br />
-              Privacy inquiries: <a href="https://fakenewsprank.com/contact">fakenewsprank.com/contact</a>
+              FakeNewsPrank.com is operated by TechBizDevs LLC.<br />
+              Privacy inquiries: <a href="contact.html">contact</a>
             </p>
           </div>
         </div>
@@ -122,42 +98,9 @@
     </section>
   </main>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <a href="index.html" class="nav-logo footer-logo">
-          <img src="assets/logo.png" alt="FakeNewsPrank" class="logo-img" />
-        </a>
-        <p class="footer-tagline">The internet's most irresponsible journalism simulator.</p>
-      </div>
-      <div class="footer-links-group">
-        <div class="footer-col">
-          <h4 class="footer-col-title">Product</h4>
-          <ul>
-            <li><a href="index.html#how-it-works">How It Works</a></li>
-            <li><a href="index.html#examples">Examples</a></li>
-            <li><a href="index.html#pricing">Pricing</a></li>
-            <li><a href="https://fakenewsprank.com/create">Create Article</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4 class="footer-col-title">Legal &amp; Safety</h4>
-          <ul>
-            <li><a href="terms.html">Terms of Service</a></li>
-            <li><a href="privacy.html">Privacy Policy</a></li>
-            <li><a href="https://fakenewsprank.com/report">Report an Article</a></li>
-            <li><a href="https://fakenewsprank.com/takedown">Takedown Request</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom container">
-      <p class="footer-disclaimer">⚠️ <strong>FakeNewsPrank is a parody and satire entertainment platform.</strong> All generated articles are fictional and for entertainment purposes only. Nothing on this site is intended to be factual news. Generated content may be publicly accessible if shared and is hosted on articles.fakenewsprank.com or related content domains.</p>
-      <p class="footer-copy">© 2026 FakeNewsPrank.com is operated by TechBizDevs LLC.</p>
-    </div>
-  </footer>
+  <div id="site-footer"></div>
 
+  <script src="js/components.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
